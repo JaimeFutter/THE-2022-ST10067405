@@ -9,12 +9,14 @@ import javax.swing.JOptionPane;
  */
 /**
  *
- * @author jaime
+ * @author jaime - ST10067405
  */
 public class Hospital_Inspections extends javax.swing.JFrame {
+    
     /*reference(s): 
      * 1 - Java-Programming-9th-Edition by Joyce Ferrell
      */
+    
     public Hospital_Inspections() {
         initComponents();
     }
@@ -246,7 +248,7 @@ public class Hospital_Inspections extends javax.swing.JFrame {
         //display variable
         String display = "";
         
-        //for-loop to concatenate the hospital info for the text area.
+        //for-loop to concatenate hospital info for the text area.
         for (int i = 0; i < hospitalName.size(); i++) {
             display += "Hospital Name: " + hospitalName.get(i)
                      + "\nHospital Location: " + hospitalLocation.get(i)
