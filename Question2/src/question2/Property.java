@@ -25,6 +25,7 @@ public class Property {
     public static DecimalFormat df = new DecimalFormat("###,###,###");
 
     public static void main(String[] args) {
+        //invoking print and calculate methods
         Print();
         Calculate();
     }

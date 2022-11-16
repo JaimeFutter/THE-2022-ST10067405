@@ -199,9 +199,9 @@ public class Travel extends javax.swing.JFrame {
             //display variable
             String display = "TRAVEL LOG\n********************************";
             
-            //while loop to print each line
+            //while loop to print each entry
             while (kb.hasNextLine()) {
-                //test
+                //setting text in Text Area
                 jTextArea1.setText(display += "\nDestination 1: " + kb.nextLine()
                         + "\nDestination 2: " + kb.nextLine()
                         + "\nTravel By: " + kb.nextLine() 
