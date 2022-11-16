@@ -12,9 +12,8 @@ import javax.swing.JOptionPane;
  * @author jaime
  */
 public class Hospital_Inspections extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Hospital_Inspections
+    /*reference(s): 
+     * 1 - Java-Programming-9th-Edition by Joyce Ferrell
      */
     public Hospital_Inspections() {
         initComponents();

@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
  * @author jaime - ST10067405
  */
 public class Property {
-    /*references: 
+    /*reference(s): 
      * 1 - https://jenkov.com/tutorials/java-internationalization/decimalformat.html
      * 2 - Java-Programming-9th-Edition by Joyce Ferrell
      */
