@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -161,6 +162,7 @@ public class Travel extends javax.swing.JFrame {
 
         //Prevention of same location
         if (START_COMBOBOX.getSelectedItem().equals(END_COMBOBOX.getSelectedItem())) {
+            
             //JOP for error message
             JOptionPane.showMessageDialog(null, "Destinations cannot be the same!!!", "ERROR", JOptionPane.ERROR_MESSAGE);
         } else {
@@ -181,7 +183,7 @@ public class Travel extends javax.swing.JFrame {
                 //closing stream
                 bw.close();
 
-            } catch (Exception e) {
+            } catch (IOException e) {
                 //JOP for error message
                 JOptionPane.showMessageDialog(null, "File not found.", "ERROR", JOptionPane.ERROR_MESSAGE);
                 e.printStackTrace();
@@ -207,6 +209,7 @@ public class Travel extends javax.swing.JFrame {
             }
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "File not found.", "ERROR", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
         }
     }
 
